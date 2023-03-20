@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+   <!-- navigation -->
+    <nav class="navbar navbar-expand-lg bg-warning d-flex justify-content-between">
+        <h1 class="ms-4">
+            <a href="index.html" class="text-dark text-decoration-none">
+            READLE
+            </a>
+        </h1>
+        <a href="#" class="text-dark text-decoration-none me-4">
+            <span>
+                <i class="bi bi-person"></i>
+            Login/Register
+            </span>
+        </a>
+    </nav>
+
+    <section class="container-xl">
+        <!-- shipping info form -->
+        <div class="body-checkout container-lg d-flex flex-row justify-content-around my-4">
+            <!-- shipping Details -->
+            <div class="shipping-box border border-warning px-4 py-4">
+                <form action="#" method="#">
+                    <div class="shipping-title h3">
+                        Shipping Details
+                    </div>
+                    <div class="personal-info">
+                        <h5>
+                            Personal Information
+                        </h5>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                          </div>
+                        <p>
+                            You have the option to create an account with this email after checkout.
+                        </p>
+                    </div>
+                    <div class="shipping-box">
+                        <h5>
+                            Shipping Address
+                        </h5>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="email" class="form-control" id="fullName" placeholder="Jasmine Palcon">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fullAdress" class="form-label">Shipping Address</label>
+                            <input type="email" class="form-control" id="fullAdress" placeholder="Street name, Brgy., City/Municipality">
+                        </div>
+                        <div class="mb-3">
+                            <label for="region" class="form-label">Region</label>
+                            <select class="form-control" aria-label="region selector">
+                                <option selected disabled>Province</option>
+                                <option value="NCR">NCR</option>
+                                <option value="Ilocos Region">Ilocos Region</option>
+                                <option value="Cagayan Valley">Cagayan Valley</option>
+                                <option value="Central Luzon">Central Luzon</option>
+                                <option value="CALABARZON">CALABARZON</option>
+                                <option value="MIMAROPA Region">MIMAROPA Region</option>
+                                <option value="Bicol Region">Bicol Region</option>
+                                <option value="Western Visayas">Western Visayas</option>
+                                <option value="Central Visayas">Central Visayas</option>
+                                <option value="Eastern Visayas">Eastern Visayas</option>
+                                <option value="Zamboanga Peninsula">Zamboanga Peninsula</option>
+                                <option value="Northern Mindanao">Northern Mindanao</option>
+                                <option value="Davao Region">Davao Region</option>
+                                <option value="SOCCSKSARGEN">SOCCSKSARGEN</option>
+                                <option value="Caraga">Caraga</option>
+                                <option value="CAR">CAR</option>
+                                <option value="BARMM">BARMM</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="userMobile">Phone Number: </label>
+                            <input type="tel" class=form-control id="userMobile" name="userMobile" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="ex. 09100100100">
+                        </div>
+                    </div>
+                    <div class="comment-box mt-3">
+                        <h5>
+                            Additional Instructions
+                        </h5>
+                        <div class="mb-3">
+                            <label for="userNotes" class="form-label">Notes</label>
+                            <textarea class="form-control" id="userNotes" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- order summary -->
+            <div class="order-box container-lg border border-warning w-25 px-4 py-4">
+                <form>
+                    <div class="order-summary">
+                        <div class="order-title h5">
+                         ORDER SUMMARY
+                        </div> 
+                        <div class="order-container d-flex flex-row justify-content-between mb-3">
+                            <div class="order-image">
+                                <img src="assets/images/book6.jpg">
+                            </div>
+                            <div class="order-content">
+                                <div class="order-title h6">
+                                    Moloka'i
+                                </div>
+                                <div class="order-number">
+                                    <span>
+                                        Quantity: 1
+                                    </span>
+                                    <span>
+                                        Php 525.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total d-flex flex-column">
+                        <span class="subtotal h6 border-bottom border-dark pb-1">
+                            Subtotal
+                        </span>
+                        <span class="order-total h6 border-bottom border-dark pb-1">
+                            Order Total
+                        </span>
+                    </div>
+
+                    <div class="discount-box my-3">
+                        <span>
+                            Have a discount code?
+                        </span>
+                        <div>
+                            <input type="promoCode" id="promoCode" name="promoCode" placeholder="Your discount code">
+                            <input type="submit" value="APPLY">
+                        </div>
+                    </div>
+
+                    <div class="payment-method">
+                        <span class="h6">
+                            Payment Method
+                        </span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="cod">
+                            <label class="form-check-label" for="cod">
+                                Cash on Delivery
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="debitCredit">
+                            <label class="form-check-label" for="debitCredit">
+                                Debit Card/Credit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="maya">
+                            <label class="form-check-label" for="maya">
+                                Maya
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="gcash">
+                            <label class="form-check-label" for="gcash">
+                                GCash
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order-button my-2">
+                        <input type="submit" id="placeOrder" value="Place Order">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-warning">
+        <div class="copyright d-flex justify-content-center py-1">
+            <span>
+                Copyright
+                <i class="fa-regular fa-copyright"></i>
+                2023 Cesavie
+            </span>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.pop-card {
+    width: 20%;
+    height: auto;
+    background-size: cover;
+}
+
+.card-img-pop {
+    width: 250px;
+    height: 180px;
+}
+
+.card-img-top {
+    width: 185px;
+    height: 280px;
+}
+
+.form-control {
+    width: 70%;
+}
+
+.order-image img {
+    width: 100px;
+    height: 160px;
+}

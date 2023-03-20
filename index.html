@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Readle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1>READLE</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <input class="form-control me-1" type="search" placeholder="Search by Title, Author, Genre" aria-label="Search by Title, Author, Genre">
+            <button class="btn btn-outline-secondary" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login/Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="container-xl mt-3">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/header.jpg" class="d-block w-100" alt="Books by Women">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/header2.jpg" class="d-block w-100" alt="Reading challenge">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/header3.jpg" class="d-block w-100" alt="Easter book">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="container-xl my-3 border border-warning">
+      <!-- popular categories -->
+      <div class="display-6 d-flex justify-content-center text-dark mt-3 mb-3">
+        Most Popular Categories
+      </div>
+      <div class="d-flex justify-content-between flex-wrap ps-3 pe-3">
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/cardbooks1.jpg" class="card-img-pop" alt="Young Adult">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Young Adult</h5>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/cardbooks2.jpg" class="card-img-pop" alt="Romance">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Romance</h5>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/cardbooks3.jpg" class="card-img-pop" alt="Fantasy">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fantasy</h5>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/cardbooks4.jpg" class="card-img-pop" alt="Horror">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Horror</h5>
+          </div>
+        </div>
+      </div>
+      <!-- books -->
+      <div class="display-6 d-flex justify-content-center text-dark mt-3">
+        Just For You
+      </div>
+      <div class="d-flex justify-content-between flex-wrap pt-3 pb-3">
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book1.jpg" class="card-img-top" alt="Digital Fortress">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Digital Fortress</h6>
+            <p class="card-text">by Dan Brown</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book2.jpg" class="card-img-top" alt="Queste">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Queste</h6>
+            <p class="card-text">by Angie Sage</p>
+            <a href="checkout.html" class="btn btn-outline-secondary border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book3.jpg" class="card-img-top" alt="Wrath">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Wrath</h6>
+            <p class="card-text">by Robin Wasserman</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book4.jpg" class="card-img-top" alt="Soul Stealer">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Soul Stealer</h6>
+            <p class="card-text">by Martin Booth</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book5.jpg" class="card-img-top" alt="Silver Lining Playbook">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Silver Lining Playbook</h6>
+            <p class="card-text">by Matthew Quick</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book6.jpg" class="card-img-top" alt="Moloka'i">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Moloka'i</h6>
+            <p class="card-text">by Alan Brennert</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book7.jpg" class="card-img-top" alt="Water for Elephants">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Water for Elephants</h6>
+            <p class="card-text">by Sara Gruen</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book8.jpg" class="card-img-top" alt="Time's Undoing">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Time's Undoing</h6>
+            <p class="card-text">by Cheryl A. Head</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book9.jpg" class="card-img-top" alt="Hungry Ghosts">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Hungry Ghosts</h6>
+            <p class="card-text">by Kevin Jared Hosein</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+        <div class="card d-flex align-items-center mx-auto mt-3">
+          <div>
+            <img src="assets/images/book10.jpg" class="card-img-top" alt="The First Days">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">The First Days</h6>
+            <p class="card-text">by Rhiannon Frater</p>
+            <a href="checkout.html" class="btn border border-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer footer-expand-lg bg-warning">
+      <div class="footer-container d-flex justify-content-around ms-2 me-2 pt-3">
+          <div class="comment-box d-flex flex-column">
+              <span class="footer-title">
+                <h1>
+                  <a href="index.html" class="text-dark text-decoration-none">
+                    READLE
+                  </a>
+                </h1>
+              </span>
+              <span>
+                  For inquiries/concerns get in touch with us at 
+              </span>
+              <span>
+                  <i class="fa-solid fa-envelope"></i>
+                  support@fullybookedonline.com
+              </span>
+              <span>
+                  <i class="fa-solid fa-message"></i>
+                  Live Chat
+              </span>
+          </div>
+
+          <div class="payment-box d-flex flex-column">
+              <span class="payment-title">
+                <h5 class="text-dark">
+                  PAYMENT METHOD
+                </h5>
+              </span>
+              <span>
+                  <i class="fa-solid fa-building-columns"></i>
+                  Bank Deposit/Over the Counter
+              </span>
+              <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Credit/Debit Cards
+              </span>
+              <span>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Digital Wallets/Online Banking
+              </span>
+          </div>
+      </div>
+
+      <div class="copyright d-flex justify-content-center">
+          <span>
+              Copyright
+              <i class="fa-regular fa-copyright"></i>
+              2023 Cesavie
+          </span>
+      </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
